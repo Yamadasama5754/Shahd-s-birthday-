@@ -34,6 +34,7 @@ html, body {
     position: absolute;
     top: 54%;
     right: 6%;
+    left: auto;
     transform: translateY(-50%);
     z-index: 2;
     display: flex;
