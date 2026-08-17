@@ -110,31 +110,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== Language switch =====
     const texts = {
         ar: {
-            title: 'شهد',
             settingsTitle: 'الإعدادات',
-            mute: 'كتم الصوت',
+            mute: 'الصوت',
             volume: 'حجم الصوت',
             lang: 'اللغة / Language',
             designs: '🎨 عرض التصاميم',
-            galleryTitle: 'تصاميمي لك 💜',
-            dir: 'rtl'
+            galleryTitle: 'تصاميمي لك 💜'
         },
         en: {
-            title: 'Shahd',
             settingsTitle: 'Settings',
-            mute: 'Mute',
+            mute: 'Sound',
             volume: 'Volume',
             lang: 'اللغة / Language',
             designs: '🎨 Show Designs',
-            galleryTitle: 'My designs for you 💜',
-            dir: 'ltr'
+            galleryTitle: 'My designs for you 💜'
         }
     };
 
     function applyLang(lang) {
         const t = texts[lang];
-        document.documentElement.lang = lang;
-        document.documentElement.dir = t.dir;
         document.getElementById('settingsTitle').textContent = t.settingsTitle;
         document.getElementById('lblMute').textContent = t.mute;
         document.getElementById('lblVolume').textContent = t.volume;
