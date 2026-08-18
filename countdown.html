@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOMIZE: Change the title -->
+    <title data-i18n="pageTitle">عيد ميلاد سعيد</title>
+    <!-- CUSTOMIZE: Change favicon to your own icon -->
+    <link rel="icon" type="image/png" href="assets/start-bg.png">
+    <!-- Preload Images - CUSTOMIZE: Update with your image names -->
+    <link rel="preload" as="image" href="photos/photo-1.jpg">
+    <link rel="preload" as="image" href="photos/photo-2.jpg">
+    <link rel="preload" as="image" href="photos/photo-3.jpg">
+    <link rel="preload" as="image" href="gif1.gif">
+    <link rel="preload" as="image" href="gif2.gif">
+    <!-- Preload Audio -->
+    <link rel="preload" as="audio" href="hbd.mp3">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body data-page="countdown">
+    <!-- Loading Screen -->
+    <audio id="bgMusic" loop>
+        <source src="hbd.mp3" type="audio/mpeg">
+    </audio>
+    <div class="music-toggle" id="musicToggle" title="Toggle Music">
+        <span class="music-icon">🎵</span>
+    </div>
+    <div class="cursor"></div>
+    <div class="container">
+        <div id="countdown-section" class="countdown-section">
+            <h2 class="countdown-title" data-i18n="countdownTitle">العد التنازلي لعيد الميلاد</h2>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-number">00</span>
+                    <span class="countdown-label" data-i18n="days">أيام</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-number">00</span>
+                    <span class="countdown-label" data-i18n="hours">ساعات</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-number">00</span>
+                    <span class="countdown-label" data-i18n="minutes">دقائق</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-number">00</span>
+                    <span class="countdown-label" data-i18n="seconds">ثواني</span>
+                </div>
+            </div>
+        </div>
+        <div id="birthday-content" class="birthday-content" style="display: none;">
+            <img class="birthday-image" src="assets/birthday-surprise.jpeg" alt="Birthday surprise">
+            <h1 data-i18n="birthdayTitle">عيد ميلاد سعيد يا شهد 💗</h1>
+            <p class="nickname-text" data-i18n="nickname">لأجمل بنت في حياتي 💕</p>
+            <div class="greeting"></div>
+            <p class="from-text" data-i18n="from">- من شخص يحبك 💖</p>
+            <button class="cta-button" data-i18n="cta">اضغطي للدخول 💕</button>
+        </div>
+    </div>
+
+    <script src="site-language.js"></script>
+    <script src="music.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

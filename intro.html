@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لحظة جميلة</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <main class="intro-screen" aria-label="شاشة التحميل">
+        <section class="loader-card">
+            <div class="loader-art-wrap">
+                <img class="loader-art" src="assets/loading-art.jpeg" alt="Birthday surprise">
+                <span class="art-sparkle sparkle-one">✦</span>
+                <span class="art-sparkle sparkle-two">✧</span>
+            </div>
+            <div class="loader-copy">
+                <span class="loader-kicker" id="loaderKicker">لحظة جميلة</span>
+                <h1 id="loaderTitle">نجهّز لك المفاجأة</h1>
+                <p id="loaderSubtitle">ثوانٍ قليلة ونبدأ أجمل لحظات عيد الميلاد</p>
+            </div>
+            <div class="loader-spinner" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+                <span id="progressBar"></span>
+            </div>
+            <div class="loading-footer">
+                <span id="loadingStatus">جاري تجهيز المفاجأة...</span>
+                <strong id="loadingPercent">0%</strong>
+            </div>
+            <button id="loadingButton" class="loading-button" type="button" disabled>
+                <span id="loadingButtonText">انتظري قليلًا</span>
+                <span aria-hidden="true">✦</span>
+            </button>
+        </section>
+    </main>
+    <audio id="bgMusic" loop>
+        <source src="hbd.mp3" type="audio/mpeg">
+    </audio>
+    <script src="music.js"></script>
+    <script src="intro.js"></script>
+</body>
+</html>

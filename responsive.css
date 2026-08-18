@@ -1,0 +1,207 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    body[data-page="countdown"] {
+        min-height: 100svh;
+        height: auto;
+        min-height: 100svh;
+        padding: 76px 16px 32px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body[data-page="countdown"] .container {
+        width: 100%;
+    }
+
+    body[data-page="countdown"] .countdown-title {
+        max-width: 330px;
+        margin: 0 auto 22px;
+        font-size: clamp(1.55rem, 7vw, 2.1rem);
+        line-height: 1.35;
+    }
+
+    body[data-page="countdown"] .countdown-timer {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    body[data-page="countdown"] .countdown-item {
+        min-width: calc(50% - 8px);
+        padding: 16px 10px;
+    }
+
+    body[data-page="countdown"] .countdown-number {
+        font-size: clamp(2rem, 12vw, 2.7rem);
+    }
+
+    body[data-page="countdown"] .birthday-content {
+        width: 100%;
+    }
+
+    body[data-page="countdown"] h1 {
+        margin: 0 auto 16px;
+        font-size: clamp(1.85rem, 9vw, 2.7rem);
+        line-height: 1.25;
+    }
+
+    body[data-page="countdown"] .birthday-image {
+        width: min(100%, 280px);
+        height: 180px;
+        margin-bottom: 18px;
+    }
+
+    body[data-page="countdown"] .greeting {
+        margin-bottom: 20px;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    body[data-page="countdown"] .from-text {
+        margin-bottom: 18px;
+    }
+
+    body[data-page="countdown"] .music-toggle,
+    body[data-page="wishes"] .music-toggle {
+        top: 12px;
+        right: 12px;
+        width: 44px;
+        height: 44px;
+    }
+
+    body[data-page="wishes"] {
+        min-height: 100svh;
+        overflow-x: hidden;
+    }
+
+    body[data-page="wishes"] .container {
+        width: 100%;
+        padding: 82px 14px 30px;
+    }
+
+    body[data-page="wishes"] h1 {
+        max-width: 340px;
+        margin: 0 auto 18px;
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+        line-height: 1.3;
+    }
+
+    body[data-page="wishes"] .reason-card {
+        width: 100%;
+        margin: 14px 0;
+        padding: 18px 16px;
+        border-radius: 18px;
+    }
+
+    body[data-page="wishes"] .reason-text {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    body[data-page="wishes"] .shuffle-button {
+        max-width: 100%;
+        margin: 18px auto 6px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    body[data-page="wishes"] .ending-section {
+        margin-top: 28px;
+        padding: 18px 0 30px;
+    }
+
+    body[data-page="wishes"] .ending-text {
+        font-size: 1.65rem;
+    }
+
+    body[data-page="wishes"] .back-btn,
+    body[data-page="timeline"] .back-btn,
+    body[data-page="memories"] .back-btn {
+        top: 12px;
+        left: 12px;
+        width: 44px;
+        height: 44px;
+        font-size: 1.25rem;
+    }
+
+    body[data-page="timeline"] .page-title {
+        max-width: 90%;
+        margin: 0 auto 8px;
+        font-size: clamp(1.8rem, 9vw, 2.4rem);
+        line-height: 1.25;
+    }
+
+    body[data-page="timeline"] .page-subtitle {
+        margin-bottom: 1.5rem;
+        padding: 0 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    body[data-page="timeline"] .timeline {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    body[data-page="timeline"] .timeline-content {
+        width: 100%;
+        max-width: calc(100vw - 78px);
+        margin: 0 0.5rem;
+        padding: 1rem;
+    }
+
+    body[data-page="timeline"] .receipt-container {
+        width: calc(100% - 28px);
+        margin: 1rem auto;
+    }
+
+    body[data-page="timeline"] .next-btn {
+        max-width: calc(100% - 32px);
+        margin: 1rem auto 2rem;
+        font-size: 1.05rem;
+    }
+
+    body[data-page="memories"] .welcome {
+        padding: 5rem 1rem 1.5rem;
+    }
+
+    body[data-page="memories"] .welcome h1 {
+        font-size: clamp(2.5rem, 13vw, 3.3rem);
+        line-height: 1.15;
+    }
+
+    body[data-page="memories"] .welcome p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    body[data-page="memories"] .memory-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+
+    body[data-page="memories"] .final-message {
+        margin: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    body[data-page="memories"] .final-message h2 {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        line-height: 1.25;
+    }
+
+    body[data-page="memories"] .final-message p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+}
